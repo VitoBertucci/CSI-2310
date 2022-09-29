@@ -1,5 +1,4 @@
 package Classes;
-import Classes.Node; 
     //linked list
 public class linkedList {
 
@@ -32,10 +31,9 @@ public class linkedList {
     //get node with specified data
     public Node search(int key) {
         Node x = head;
-        while(x != null && x.data != key) {
+        while(x != null && x.getData() != key) {
             x = x.next;
         }
-
         return x;
     }
 
@@ -55,7 +53,7 @@ public class linkedList {
     //display alll nodes
     public void display() {
         while(head != null) {
-            System.out.print(head.data + " ");
+            System.out.print(head.getData() + " ");
             head = head.next;
         }
     }

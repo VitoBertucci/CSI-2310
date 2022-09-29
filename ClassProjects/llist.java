@@ -11,6 +11,6 @@ public class llist {
         list.insertAfter(6, 5);
         list.display();
 
-        System.out.println(list.tail.prev.prev.data);
+        System.out.println(list.tail.prev.prev.getData());
     }
 }
