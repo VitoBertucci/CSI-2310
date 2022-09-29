@@ -1,7 +1,7 @@
 package Classes;
     //node
 public class Node {
-    private int data;
+    public int data;
     public Node next;
     public Node prev; 
 
@@ -9,10 +9,4 @@ public class Node {
         data = d;
         this.next = null;
     }
-
-    public int getData() {
-        return data;
-    }
-
-    
 }

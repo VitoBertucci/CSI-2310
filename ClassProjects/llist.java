@@ -10,7 +10,5 @@ public class llist {
         list.insertHead(4);
         list.insertAfter(6, 5);
         list.display();
-
-        System.out.println(list.tail.prev.prev.getData());
     }
 }

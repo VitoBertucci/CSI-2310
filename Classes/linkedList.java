@@ -20,6 +20,8 @@ public class linkedList {
         head = n;
     }
 
+
+    //tail.next = new Node(data).prev = tail = new Node(data);
     //add node to tail
     public void insertTail(int data) {
         Node n = new Node(data);
@@ -31,7 +33,7 @@ public class linkedList {
     //get node with specified data
     public Node search(int key) {
         Node x = head;
-        while(x != null && x.getData() != key) {
+        while(x != null && x.data != key) {
             x = x.next;
         }
         return x;
@@ -40,20 +42,17 @@ public class linkedList {
     //insert node with specified data after different node with specified data
     public void insertAfter(int newData, int key) {
         Node n = new Node(newData);
-        Node spot = search(key);
-
-        n.prev = spot;
-        n.next = spot.next;
-        spot.next = n;
-
-        Node tmp = n.next;
-        tmp.prev = n;
+        
+        n.prev = search(key);
+        n.next = search(key).next;
+        search(key).next = n;
+        n.next.prev = n;
     }
 
     //display alll nodes
     public void display() {
         while(head != null) {
-            System.out.print(head.getData() + " ");
+            System.out.print(head.data + " ");
             head = head.next;
         }
     }
