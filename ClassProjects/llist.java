@@ -1,9 +1,8 @@
-package LLProject;
+package ClassProjects;
 import Classes.linkedList;
 
 public class llist {
     //linked list project for lab
-
     public static void main(String[] args) {
         linkedList list = new linkedList();
         list.insert(5);
@@ -11,5 +10,7 @@ public class llist {
         list.insertHead(4);
         list.insertAfter(6, 5);
         list.display();
+
+        System.out.println(list.tail.prev.prev.data);
     }
 }
