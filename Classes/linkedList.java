@@ -1,6 +1,6 @@
 package Classes;
 import Classes.Node; 
-
+    //linked list
 public class linkedList {
 
     public static Node head; //front of list

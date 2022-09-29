@@ -2,6 +2,7 @@ package LLProject;
 import Classes.linkedList;
 
 public class llist {
+    //linked list project for lab
 
     public static void main(String[] args) {
         linkedList list = new linkedList();

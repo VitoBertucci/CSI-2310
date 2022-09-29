@@ -1,6 +1,8 @@
 package ClassProjects;
 import Classes.Person;
 
+//interview project for lecture
+
 public class interview {
     public static void main(String[] args) {
         int pplNum = 5; //number of applicants to be interviewed

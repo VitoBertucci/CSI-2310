@@ -1,6 +1,6 @@
 package Classes;
 import java.util.Random;
-
+    //person
 public class Person {
     private Random r = new Random();
     private String name;//name of applicant
