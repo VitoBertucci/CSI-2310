@@ -74,7 +74,7 @@ public class intrusionDetectorClass {
 		
 	    if (target == head.getsequenceNumber())
 	    {
-	    	/*head = head.getLink();*/
+	    	head = head.getLink();
 	    }	
 	    else
 	        previous = head.findPrevious(head, target);
