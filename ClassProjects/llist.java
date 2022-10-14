@@ -1,7 +1,5 @@
 package ClassProjects;
 import Classes.linkedList;
-import Classes.Node;
-
 public class llist {
     public static void print(int s) {
         System.out.println(s);
