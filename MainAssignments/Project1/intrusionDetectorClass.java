@@ -1,13 +1,9 @@
 package MainAssignments.Project1;
 
 public class intrusionDetectorClass {
-
 	static IntNode head = null;
-	
 	public static void main(String[] args) {
-		
 		System.out.println("Prj1 is running.\n");
-		
 		
 		head = new IntNode(13, 230185386, head);		
 	    head.displayNodeData(head);
@@ -15,11 +11,11 @@ public class intrusionDetectorClass {
 	    removeDuplicate(13);
 		if (head != null)
 	       head.displayNodeData(head);
-		else
-		{
+		else {
 		   System.out.print("The linked list is empty.\n");
 		   System.out.print(" \n");
 		}
+
 		addNodeInOder(13, 308329763);
 	    head.displayNodeData(head);
 	    
@@ -58,12 +54,8 @@ public class intrusionDetectorClass {
 	}
 	
 	
-	// Precondition: head refers the first node in the linked list, or is null when the linked list is empty.
-	// The linked list contains at least one element.
-	// Postcondition: If the linked list contains a node with sequenceNumber equal to target, 
-	// then that node is removed from the linked list. Otherwise, no changes are made.
-	public static IntNode removeDuplicate(int target)   
-	{
+
+	public static IntNode removeDuplicate(int target) {
 	    if (head == null)
 	    	return head;
 		
@@ -71,11 +63,9 @@ public class intrusionDetectorClass {
 		
 		IntNode previous = null;
 		
-	    if (target == head.getsequenceNumber())
-	    {
+	    if (target == head.getsequenceNumber()) {
 	    	head = head.getLink();
-	    }	
-	    else
+	    } else
 	        previous = head.findPrevious(head, target);
 	    
 	    if (previous != null) 
