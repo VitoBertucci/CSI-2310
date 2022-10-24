@@ -1,4 +1,4 @@
-package ClassProjects;
+package Classes;
 
 public class bTree {
     bNode root;
