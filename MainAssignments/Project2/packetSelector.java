@@ -33,9 +33,20 @@ public class packetSelector {
 	// Precondition: The StackWork object packets is different than null.
 	// Postcondition: The elements of the stack S0 that are equal to, or less than 100, are inserted in the stack S1.
 	// The elements of the stack S0 that are greater than 100 are inserted in the stack S2.
-	public static void reorganizeNetworkTraffic()  {
-			
+	public static void reorganizeNetworkTraffic() {
+		if (packets != null) {
+			int i;
+			while (packets.getS0top() >= 0) {
+				i = packets.Pop(0);
+				if (i <= 100) {
+					packets.Push(i, 1);
+				} 
+				if (i > 100) {
+					packets.Push(i, 2);
+				}
+			}
+		}
+		
 	} 
-	
 }       
 
