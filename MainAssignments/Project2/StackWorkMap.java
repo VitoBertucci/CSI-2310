@@ -2,10 +2,6 @@ package MainAssignments.Project2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Stack;
-
-import Classes.stack;
-
 
 public class StackWorkMap {
 
@@ -27,7 +23,6 @@ public class StackWorkMap {
     }
     
     public void displayStackData() {
-
         for (Integer key : stacks.keySet()) {
             System.out.print("\nData in S" + key + ":");
             System.out.print(stacks.get(key));

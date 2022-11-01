@@ -11,9 +11,9 @@ public class packetSelectorMap {
 		
 		packets.Push(95, 0);
 		packets.Push(103, 0);
-		packets.Push(81, 0);
+		packets.Push(1281, 0);
 		packets.Push(70, 0);
-		packets.Push(74, 0);
+		packets.Push(1274, 0);
 		packets.Push(134, 0);
 		packets.Push(62, 0);
 		packets.Push(19, 0);
